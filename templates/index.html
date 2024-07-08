@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Leaf Diseases Classifier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label.upload-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label.upload-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 30px;
+            color: #000;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .disease-info {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .disease-info h2 {
+            font-size: 1.75rem;
+            color: #333;
+        }
+
+        .disease-info p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #result {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Plant Leaf Diseases Classifier</h1>
+        </header>
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <label for="file" class="upload-btn">Choose Image</label>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result" class="result">
+            {% if filename %}
+                <p>Uploaded image: <span style="color: rgba(255, 0, 0, 0.7);">{{ filename }}</span></p>
+                {% if result %}
+                    <p>Classification result: <span style="color: rgba(255, 0, 0, 0.7);">{{ result }}</span></p>
+                    <p>Classification confidence: <span style="color: rgba(255, 0, 0, 0.7);">{{ confidence }}%</span></p>
+                    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+                    {% if disease_info %}
+                        <div class="disease-info">
+                            <h2>{{ disease_info['name'] }}</h2>
+                            <p>{{ disease_info['description'] }}</p>
+                            <p><strong>Symptoms:</strong> {{ disease_info['symptoms'] }}</p>
+                            <p><strong>Treatment:</strong> {{ disease_info['treatment'] }}</p>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultDiv = document.getElementById('result');
+            if (resultDiv) {
+                resultDiv.style.opacity = '0';
+                setTimeout(() => {
+                    resultDiv.style.transition = 'opacity 1s ease';
+                    resultDiv.style.opacity = '1';
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

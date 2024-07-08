@@ -1,0 +1,194 @@
+{
+    "Apple___Apple_scab": {
+        "name": "Apple Scab",
+        "description": "Apple scab is a disease of apple trees caused by the ascomycete fungus Venturia inaequalis. Symptoms include dark, olive-green, velvety lesions on leaves, fruit, and young twigs. These lesions can cause the leaves to curl and distort, leading to premature defoliation. Infected fruit may develop corky, cracked spots, reducing their market value."
+    },
+    "Apple___Black_rot": {
+        "name": "Black Rot",
+        "description": "Black rot is a disease of apple trees caused by the fungus Botryosphaeria obtusa. Initial symptoms include small, purple spots on leaves, which enlarge to form characteristic 'frog-eye' lesions with brown centers and purple margins. On fruit, it causes a firm, brown rot, often starting at wounds or the blossom end. Infected branches develop sunken, elongated cankers."
+    },
+    "Apple___Cedar_apple_rust": {
+        "name": "Cedar Apple Rust",
+        "description": "Cedar apple rust is caused by the fungus Gymnosporangium juniperi-virginianae. The disease cycle involves both apple and cedar (juniper) trees. On apple trees, it causes bright yellow-orange spots on leaves, often with a red border, and later forms tube-like structures on the underside of leaves. On cedar trees, it causes brown, gall-like swellings on branches, which produce orange, gelatinous tendrils during wet weather in spring."
+    },
+    "Apple___healthy": {
+        "name": "Healthy Apple",
+        "description": "The apple plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Apple___Fire_blight": {
+        "name": "Fire Blight",
+        "description": "Fire blight is a devastating disease of apple trees caused by the bacterium Erwinia amylovora. Symptoms include water-soaked, necrotic lesions on blossoms, shoots, and branches. Affected areas often ooze a sticky, bacterial exudate. Infected shoots wilt and turn black, resembling scorched plant tissue. The disease can spread rapidly, especially in warm, wet conditions, potentially killing young trees and severely impacting mature ones."
+    },
+    "Blueberry___healthy": {
+        "name": "Healthy Blueberry",
+        "description": "The blueberry plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Blueberry___Mummy_berry": {
+        "name": "Mummy Berry",
+        "description": "Mummy berry is a disease of blueberry plants caused by the fungus Monilinia vaccinii-corymbosi. The disease has two phases: a primary infection phase causing shoot blight and a secondary infection phase affecting the fruit. Blighted shoots appear wilted and necrotic, while infected berries become mummified and drop to the ground, serving as a source of inoculum for the following season."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "name": "Powdery Mildew",
+        "description": "Powdery mildew on cherry is caused by the fungus Podosphaera clandestina. The disease is characterized by white, powdery fungal growth on the surface of leaves, shoots, and fruit. Infected leaves may become distorted and drop prematurely. Severe infections can reduce photosynthesis, stunt growth, and negatively impact fruit quality and yield."
+    },
+    "Cherry_(including_sour)___healthy": {
+        "name": "Healthy Cherry",
+        "description": "The cherry plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Cherry_(including_sour)___Brown_rot": {
+        "name": "Brown Rot",
+        "description": "Brown rot of cherry is caused by the fungus Monilinia fructicola. Symptoms include blossom blight, where infected flowers turn brown and die. Fruit rot begins as small, brown spots that rapidly enlarge, often becoming covered with tan to gray spore masses. Infected twigs and branches may develop cankers, leading to dieback. The disease thrives in warm, humid conditions and can cause significant crop losses."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "name": "Cercospora Leaf Spot",
+        "description": "Cercospora leaf spot is a fungal disease of maize caused by Cercospora zeae-maydis. Symptoms include small, tan to gray, rectangular lesions on leaves, often surrounded by a yellow halo. Lesions can coalesce, causing large areas of leaf blight, which reduces photosynthetic capacity and can significantly lower grain yield."
+    },
+    "Corn_(maize)___Common_rust_": {
+        "name": "Common Rust",
+        "description": "Common rust of corn is caused by the fungus Puccinia sorghi. The disease produces small, round to oval, reddish-brown pustules on both leaf surfaces, which later turn black. Severe infections can cause leaf tissue to die prematurely, reducing the plant's ability to photosynthesize and impacting yield. The disease is favored by cool, moist conditions."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "name": "Northern Leaf Blight",
+        "description": "Northern corn leaf blight is caused by the fungus Exserohilum turcicum. The disease manifests as long, elliptical, gray-green to tan lesions on leaves, which can merge to cause extensive leaf blighting. In severe cases, significant leaf area loss occurs, leading to reduced photosynthesis and lower grain yield. Warm, humid conditions favor the spread of this disease."
+    },
+    "Corn_(maize)___healthy": {
+        "name": "Healthy Corn",
+        "description": "The corn plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Corn_(maize)___Southern_rust": {
+        "name": "Southern Rust",
+        "description": "Southern rust of corn is caused by the fungus Puccinia polysora. It appears as small, circular, orange to brown pustules primarily on the upper leaf surfaces. Severe infections can lead to premature leaf senescence, reduced grain fill, and lower yields. The disease is more common in tropical and subtropical regions but can spread to temperate areas under favorable conditions."
+    },
+    "Grape___Black_rot": {
+        "name": "Black Rot",
+        "description": "Grape black rot is caused by the fungus Guignardia bidwellii. The disease is characterized by small, brownish-black spots on leaves, which enlarge and may lead to defoliation. Infected berries develop brown, sunken lesions and eventually shrivel into hard, black mummies. The disease can cause significant yield losses if not managed properly."
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "name": "Esca (Black Measles)",
+        "description": "Esca, or black measles, is a complex fungal disease of grapevines caused by a group of fungi, including Phaeoacremonium spp., Phaeomoniella chlamydospora, and Fomitiporia mediterranea. Symptoms include interveinal chlorosis and necrosis on leaves, dark streaks in the wood, and berry spots that can lead to fruit rot. The disease can cause vine decline and death, especially in older vineyards."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "name": "Isariopsis Leaf Spot",
+        "description": "Isariopsis leaf spot, caused by the fungus Pseudocercospora vitis, forms angular, dark brown to black spots on leaves. Severe infections can lead to leaf blighting and premature defoliation, which impacts vine health and productivity. The disease is more prevalent in humid conditions and can affect the quality and yield of grapes."
+    },
+    "Grape___healthy": {
+        "name": "Healthy Grape",
+        "description": "The grape plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Grape___Downy_mildew": {
+        "name": "Downy Mildew",
+        "description": "Downy mildew of grape is caused by the oomycete Plasmopara viticola. Symptoms include yellowish oil spots on leaves that turn brown and necrotic. On the underside of leaves, a white, downy fungal growth can be observed. The disease can cause severe defoliation, reducing photosynthesis and impacting grape yield and quality. It thrives in warm, humid conditions."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "name": "Citrus Greening",
+        "description": "Citrus greening disease, also known as Huanglongbing (HLB), is caused by the bacterium Candidatus Liberibacter asiaticus. Symptoms include yellow shoots, mottled leaves, and small, misshapen, bitter fruits. Infected trees show stunted growth, twig dieback, and can eventually die. The disease is spread by the Asian citrus psyllid and poses a major threat to citrus production worldwide."
+    },
+    "Orange___Citrus_canker": {
+        "name": "Citrus Canker",
+        "description": "Citrus canker is a disease caused by the bacterium Xanthomonas axonopodis pv. citri. Symptoms include raised, corky lesions on leaves, stems, and fruit. Lesions are surrounded by a water-soaked margin and a yellow halo. Severe infections can cause defoliation, twig dieback, and premature fruit drop. The disease spreads through wind-driven rain, contaminated tools, and infected plant material."
+    },
+    "Orange___healthy": {
+        "name": "Healthy Orange",
+        "description": "The orange plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Peach___Bacterial_spot": {
+        "name": "Bacterial Spot",
+        "description": "Bacterial spot of peach is caused by the bacterium Xanthomonas campestris pv. pruni. Symptoms include small, water-soaked, angular spots on leaves that later become necrotic. Fruit lesions are dark, sunken, and can coalesce, affecting fruit quality. Severe leaf infections can lead to defoliation and reduced tree vigor. The disease is favored by warm, wet conditions."
+    },
+    "Peach___healthy": {
+        "name": "Healthy Peach",
+        "description": "The peach plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "name": "Bacterial Spot",
+        "description": "Bacterial spot of bell pepper is caused by Xanthomonas campestris pv. vesicatoria. The disease causes small, water-soaked spots on leaves, which enlarge and become necrotic with a yellow halo. Fruit lesions are dark, sunken, and can affect marketability. Severe infections can lead to defoliation, reduced yield, and weakened plants. The disease is spread by splashing water and infected seeds."
+    },
+    "Pepper,_bell___healthy": {
+        "name": "Healthy Bell Pepper",
+        "description": "The bell pepper plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Potato___Early_blight": {
+        "name": "Early Blight",
+        "description": "Early blight of potato is caused by the fungus Alternaria solani. Symptoms include dark, concentric spots on leaves, often with a target-like appearance. Lesions can coalesce, leading to extensive leaf blight. Infected tubers show dry, brown rot with similar concentric rings. The disease reduces photosynthesis, tuber quality, and yield, and is favored by warm, humid conditions."
+    },
+    "Potato___healthy": {
+        "name": "Healthy Potato",
+        "description": "The potato plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Potato___Late_blight": {
+        "name": "Late Blight",
+        "description": "Late blight of potato is caused by the oomycete Phytophthora infestans. Symptoms include water-soaked, dark lesions on leaves and stems, often with a white, downy growth on the underside of leaves. Infected tubers show firm, brown rot that can extend deep into the tissue. The disease spreads rapidly under cool, moist conditions and can cause significant yield losses."
+    },
+    "Raspberry___healthy": {
+        "name": "Healthy Raspberry",
+        "description": "The raspberry plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Raspberry___Leaf_spot": {
+        "name": "Leaf Spot",
+        "description": "Raspberry leaf spot is caused by the fungus Sphaerulina rubi. The disease causes small, circular, white to gray spots with a purple border on leaves. Severe infections can lead to premature defoliation, reducing plant vigor and yield. The disease is favored by cool, wet conditions and can be managed through cultural practices and fungicide applications."
+    },
+    "Soybean___healthy": {
+        "name": "Healthy Soybean",
+        "description": "The soybean plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Soybean___Leaf_blight": {
+        "name": "Soybean Leaf Blight",
+        "description": "Soybean leaf blight is caused by the fungus Septoria glycines. Symptoms include small, angular, dark brown to black spots on leaves, which can coalesce to form large blighted areas. Severe infections can lead to premature leaf drop, reducing photosynthesis and impacting yield. The disease thrives in warm, humid conditions and can be managed through crop rotation and fungicide applications."
+    },
+    "Squash___Powdery_mildew": {
+        "name": "Powdery Mildew",
+        "description": "Powdery mildew of squash is caused by the fungus Erysiphe cichoracearum. The disease appears as white, powdery fungal growth on the upper leaf surfaces, stems, and flowers. Infected leaves may become distorted and die prematurely. Severe infections reduce photosynthetic capacity, leading to stunted growth and reduced fruit yield. The disease is favored by dry, warm conditions with high humidity."
+    },
+    "Squash___healthy": {
+        "name": "Healthy Squash",
+        "description": "The squash plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Strawberry___Leaf_scorch": {
+        "name": "Leaf Scorch",
+        "description": "Strawberry leaf scorch is caused by the fungus Diplocarpon earlianum. Symptoms include small, dark purple spots on leaves that enlarge and coalesce, leading to scorched, necrotic leaf tissue. Severe infections can cause defoliation, reducing plant vigor and yield. The disease is favored by wet, humid conditions and can be managed through cultural practices and fungicide applications."
+    },
+    "Strawberry___healthy": {
+        "name": "Healthy Strawberry",
+        "description": "The strawberry plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Tomato___Bacterial_spot": {
+        "name": "Bacterial Spot",
+        "description": "Bacterial spot of tomato is caused by Xanthomonas campestris pv. vesicatoria. Symptoms include small, water-soaked spots on leaves, which enlarge and become necrotic with a yellow halo. Fruit lesions are dark, sunken, and can affect marketability. Severe infections can lead to defoliation, reduced yield, and weakened plants. The disease is spread by splashing water and infected seeds."
+    },
+    "Tomato___healthy": {
+        "name": "Healthy Tomato",
+        "description": "The tomato plant is healthy and shows no signs of disease or pest damage."
+    },
+    "Tomato___Early_blight": {
+        "name": "Early Blight",
+        "description": "Early blight of tomato is caused by the fungus Alternaria solani. Symptoms include dark, concentric spots on leaves, often with a target-like appearance. Lesions can coalesce, leading to extensive leaf blight. Infected fruit show dry, brown rot with similar concentric rings. The disease reduces photosynthesis, fruit quality, and yield, and is favored by warm, humid conditions."
+    },
+    "Tomato___Late_blight": {
+        "name": "Late Blight",
+        "description": "Late blight of tomato is caused by the oomycete Phytophthora infestans. Symptoms include water-soaked, dark lesions on leaves and stems, often with a white, downy growth on the underside of leaves. Infected fruit show firm, brown rot that can extend deep into the tissue. The disease spreads rapidly under cool, moist conditions and can cause significant yield losses."
+    },
+    "Tomato___Leaf_Mold": {
+        "name": "Leaf Mold",
+        "description": "Tomato leaf mold is caused by the fungus Passalora fulva. Symptoms include pale green to yellow spots on the upper leaf surface, which turn brown and necrotic. A velvety, olive-green to gray mold develops on the underside of leaves. Severe infections can cause defoliation, reducing photosynthesis and yield. The disease is favored by high humidity and poor air circulation."
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "name": "Septoria Leaf Spot",
+        "description": "Septoria leaf spot of tomato is caused by the fungus Septoria lycopersici. Symptoms include small, circular, water-soaked spots on leaves, which enlarge and become tan with dark borders. Severely infected leaves turn yellow and drop prematurely, reducing plant vigor and yield. The disease thrives in warm, wet conditions and can be managed through crop rotation and fungicide applications."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "name": "Two-Spotted Spider Mite",
+        "description": "Two-spotted spider mites (Tetranychus urticae) are pests that feed on tomato plants, causing stippling and bronzing of leaves. Severe infestations can lead to leaf drop and reduced plant vigor. Spider mites thrive in hot, dry conditions and can be managed through the use of miticides, biological control agents, and cultural practices that reduce plant stress."
+    },
+    "Tomato___Target_Spot": {
+        "name": "Target Spot",
+        "description": "Target spot of tomato is caused by the fungus Corynespora cassiicola. Symptoms include small, dark, circular spots with concentric rings on leaves, stems, and fruit. Severe infections can lead to extensive leaf blighting, defoliation, and reduced fruit quality. The disease is favored by warm, humid conditions and can be managed through crop rotation, resistant varieties, and fungicide applications."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "description": "Tomato yellow leaf curl virus (TYLCV) is a viral disease transmitted by the whitefly Bemisia tabaci. Symptoms include yellowing and curling of leaves, stunted growth, and reduced fruit set. Infected plants produce fewer, smaller fruits, leading to significant yield losses. The disease is managed through the use of resistant varieties, insecticides to control whitefly populations, and cultural practices to reduce virus spread."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "name": "Tomato Mosaic Virus",
+        "description": "Tomato mosaic virus (ToMV) is a viral disease that causes mottling, yellowing, and distortion of leaves. Infected plants may show stunted growth and reduced fruit set. Fruit symptoms include internal browning and uneven ripening. The virus is transmitted mechanically through contaminated tools, hands, and plant debris. Management includes using virus-free seeds, resistant varieties, and good sanitation practices."
+    }
+}
