@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 import os
 import json
 import numpy as np
@@ -6,11 +6,19 @@ import cv2
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocess_input
+from werkzeug.utils import secure_filename
+import logging
+from datetime import datetime
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'jfif'}
+MAX_FILE_SIZE = 10 * 1024 * 1024  # 10 MB
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
+app.config['MAX_CONTENT_LENGTH'] = MAX_FILE_SIZE
+
+# Set up logging
+logging.basicConfig(filename='app.log', level=logging.INFO)
 
 # Load the TFLite model and allocate tensors.
 interpreter = tf.lite.Interpreter(model_path="model.tflite")
@@ -103,12 +111,12 @@ def index():
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
-        return redirect(request.url)
+        return jsonify({'error': 'No file part'}), 400
     file = request.files['file']
     if file.filename == '':
-        return redirect(request.url)
+        return jsonify({'error': 'No selected file'}), 400
     if file and allowed_file(file.filename):
-        filename = file.filename
+        filename = secure_filename(file.filename)
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
         
@@ -117,13 +125,61 @@ def upload_file():
             result_class = classes[predicted_class_index]
             confidence = round(confidence * 100, 2)
             if confidence < 30:
-                result_class = "Photo doesn't contain leaves"
+                result_class = "Photo doesn't contain identifiable leaves"
             disease_info = diseases_info.get(result_class, {})
-            return render_template('index.html', filename=filename, result=result_class, confidence=confidence, disease_info=disease_info)
+            
+            # Log the prediction
+            log_prediction(filename, result_class, confidence)
+            
+            return jsonify({
+                'filename': filename,
+                'result': result_class,
+                'confidence': confidence,
+                'disease_info': disease_info
+            })
         else:
-            return render_template('index.html', filename=filename, result="Photo doesn't contain a plant leaf", confidence=0)
+            return jsonify({
+                'filename': filename,
+                'result': "Photo doesn't contain a plant leaf",
+                'confidence': 0
+            })
     else:
-        return redirect(request.url)
+        return jsonify({'error': 'File type not allowed'}), 400
+
+@app.route('/history')
+def history():
+    with open('prediction_history.json', 'r') as f:
+        history = json.load(f)
+    return render_template('history.html', history=history)
+
+def log_prediction(filename, result, confidence):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = {
+        'timestamp': timestamp,
+        'filename': filename,
+        'result': result,
+        'confidence': confidence
+    }
+    
+    try:
+        with open('prediction_history.json', 'r+') as f:
+            history = json.load(f)
+            history.append(log_entry)
+            f.seek(0)
+            json.dump(history, f, indent=4)
+    except FileNotFoundError:
+        with open('prediction_history.json', 'w') as f:
+            json.dump([log_entry], f, indent=4)
+
+@app.errorhandler(413)
+def request_entity_too_large(error):
+    return jsonify({'error': 'File too large'}), 413
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    # Log the error
+    app.logger.error(f"Unhandled exception: {str(e)}")
+    return jsonify({'error': 'An unexpected error occurred'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
